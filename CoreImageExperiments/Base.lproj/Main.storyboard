@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreImageExperiments" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cutdog" translatesAutoresizingMaskIntoConstraints="NO" id="D9M-Jy-MFl">
+                                <rect key="frame" x="113" y="99" width="188" height="261"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="188" id="S4o-8H-9x9"/>
+                                    <constraint firstAttribute="height" constant="261" id="wLq-fi-rCg"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLY-Ln-g2T">
+                                <rect key="frame" x="139.5" y="812" width="135" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="a23-Lb-KZx"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="135" id="eca-fV-ncb"/>
+                                </constraints>
+                                <state key="normal" title="Apply"/>
+                                <connections>
+                                    <action selector="applyButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NAN-jH-Anw"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RZU-CA-aC9">
+                                <rect key="frame" x="113" y="471" width="188" height="261"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="261" id="4w3-PT-Lom"/>
+                                    <constraint firstAttribute="width" constant="188" id="6Ry-L1-t4v"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="CLY-Ln-g2T" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="AfA-qS-Cuj"/>
+                            <constraint firstItem="RZU-CA-aC9" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="148.5" id="Fwt-lg-fLx"/>
+                            <constraint firstItem="D9M-Jy-MFl" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-223.5" id="YgM-vb-ps5"/>
+                            <constraint firstItem="D9M-Jy-MFl" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bfB-JQ-h6B"/>
+                            <constraint firstItem="CLY-Ln-g2T" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="d22-PV-dak"/>
+                            <constraint firstItem="RZU-CA-aC9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yjD-rV-N8X"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="filteredImageView" destination="RZU-CA-aC9" id="o3M-bv-xzu"/>
+                        <outlet property="previewImageView" destination="D9M-Jy-MFl" id="qY5-Tx-4yM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="102.45535714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cutdog" width="1200" height="630"/>
+    </resources>
+</document>
