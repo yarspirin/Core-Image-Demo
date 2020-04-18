@@ -1,4 +1,4 @@
 language: swift
 xcode_project: CoreImageExperiments.xcodeproj # path to your xcodeproj folder
 xcode_scheme: CoreImageExperimentsTests
-xcode_destination: platform=iOS Simulator,OS=13.3,name=iPhone X
+xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
