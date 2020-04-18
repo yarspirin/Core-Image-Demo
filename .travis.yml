@@ -1,3 +1,4 @@
 os: osx
 language: swift
-script: xcodebuild clean build test -project CoreImageExperiments.xcodeproj/ -scheme CoreImageExperimentsTests -sdk iphonesimulator -destination "platform=iOS Simulator,OS=13.3,name=iPhone 11"
+xcode_project: CoreImageExperiments.xcodeproj # path to your xcodeproj folder
+xcode_scheme: CoreImageExperimentsTests
