@@ -2,3 +2,4 @@ os: osx
 language: swift
 xcode_project: CoreImageExperiments.xcodeproj # path to your xcodeproj folder
 xcode_scheme: CoreImageExperimentsTests
+xcode_destination: platform=iOS Simulator,OS=13.2.2,name=iPhone 8
