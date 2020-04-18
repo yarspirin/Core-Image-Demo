@@ -7,9 +7,12 @@
 //
 
 import XCTest
+@testable import CoreImageExperiments
 
 class CoreImageExperimentsTests: XCTestCase {
 
+    let calculator = Calculator()
+    
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -19,8 +22,7 @@ class CoreImageExperimentsTests: XCTestCase {
     }
 
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        XCTAssertEqual(calculator.sum(2, 3), 5)
     }
 
     func testPerformanceExample() {

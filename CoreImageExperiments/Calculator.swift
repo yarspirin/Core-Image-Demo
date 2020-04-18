@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+final class Calculator {
+    func sum(_ x: Int, _ y: Int) -> Int {
+        return x + y
+    }
+}
